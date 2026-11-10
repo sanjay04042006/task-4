@@ -1,0 +1,12 @@
+import pandas as pd
+import os
+
+# Define the relative path to the CSV file inside the data folder
+csv_path = os.path.join("data", "synthetic_authentication_log.csv")
+
+# Load the CSV file
+print(f"[*] Loading log file from: {csv_path}")
+df = pd.read_csv(csv_path)
+
+# Verification: Print the first few rows to confirm it loaded correctly
+print(df.head())
